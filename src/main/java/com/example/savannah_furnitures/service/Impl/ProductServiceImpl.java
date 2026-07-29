@@ -1,4 +1,6 @@
 package com.example.savannah_furnitures.service.Impl;
 
-public class ProductServiceImpl {
+import com.example.savannah_furnitures.service.ProductService;
+
+public class ProductServiceImpl extends ProductService {
 }
