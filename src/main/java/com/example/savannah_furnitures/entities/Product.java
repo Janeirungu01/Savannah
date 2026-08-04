@@ -21,7 +21,12 @@ public class Product {
     private Long id;
 
     @Column(nullable = false)
-    private Long name;
+    private String name;
+
+    @Enumerated(EnumType.STRING)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id", nullable = false)
+    private ProductCategory category;
 
     @Column(nullable = false, precision = 12, scale = 2)
     private BigDecimal price;
