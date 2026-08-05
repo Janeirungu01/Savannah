@@ -23,7 +23,6 @@ public class Product {
     @Column(nullable = false)
     private String name;
 
-    @Enumerated(EnumType.STRING)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id", nullable = false)
     private ProductCategory category;
@@ -41,7 +40,7 @@ public class Product {
     private int stock;
 
     @Column(length = 2000)
-    private String Description;
+    private String description;
 
-    private String imageURL;
+    private String imageUrl;
 }

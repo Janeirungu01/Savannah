@@ -19,7 +19,7 @@ public record ProductResponseDTO(
         return new ProductResponseDTO(
                 p.getId(), p.getName(), p.getCategory(), p.getPrice(),
                 p.isOnSale(), p.getSalePrice(), p.getStock(),
-                p.getDescription(), p.getImageURL()
+                p.getDescription(), p.getImageUrl()
         );
     }
 }

@@ -14,6 +14,6 @@ public record ProductRequestDTO(
         BigDecimal salePrice,
         @Min(0) int Stock,
         String description,
-        String imageURL
+        String imageUrl
 ) {
 }
